@@ -157,6 +157,10 @@ Notary has no limit on how many delegation roles can exist, so you can add more
 delegation roles such as `targets/qa_team` or `targets/security_team` to the
 trusted repository.
 
+**Note** that UCP's signing enforcement policy requires that an image be signed with
+both the `targets/releases` delegation role and another delegation role such as
+`targets/<delegation>`.
+
 Valid delegation roles take the form of `targets/<delegation>`, where
 `<delegation>` does not include further slashes.
 
